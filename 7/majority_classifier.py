@@ -1,14 +1,9 @@
-import sys
-from scipy.special import comb
-import math
 import numpy as np
-import matplotlib.pyplot as plt
 from sklearn.base import BaseEstimator
 from sklearn.base import ClassifierMixin
 from sklearn.preprocessing import LabelEncoder
 from sklearn.base import clone
 from sklearn.pipeline import _name_estimators
-import operator
 from sklearn import datasets
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
@@ -17,15 +12,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier 
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import cross_val_score
-from sklearn.metrics import roc_curve
-from sklearn.metrics import auc
-from itertools import product
-from sklearn.model_selection import GridSearchCV
-import pandas as pd
-from sklearn.ensemble import BaggingClassifier
-from sklearn.metrics import accuracy_score
-from sklearn.ensemble import AdaBoostClassifier
-import xgboost as xgb
 
 
 # Реализация взвешенного большинства
